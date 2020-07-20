@@ -1,12 +1,12 @@
 import {createStore, combineReducers , applyMiddleware } from 'redux'
-import {infoReducer} from '../component/page-info/reducers/info-reducer'
+import infoReducer from '../component/page-info/reducers/info-reducer'
 import thunk from 'redux-thunk'
 
 export default createStore(
     combineReducers(infoReducer),
     {
-        isLoadingInfo,
-        infoData
+        isLoadingInfo: true,
+        infoData: null
     },
     applyMiddleware(thunk)
 )

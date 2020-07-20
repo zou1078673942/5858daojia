@@ -1,13 +1,16 @@
-import React from 'react';
-function Info () {
+import React, { useState, useEffect } from 'react';
+import './index.css'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
+import Help from './component/Help';
+import MyInfo from './component/MyInfo';
+
+
+function Info() {
     return (
-        <div className="info-wrapper">
-            <div className="info-top">
-                <h3 className="my-info">我的消息</h3>
-                <span className="help">帮助中心</span>
-            </div>
-            <div className="info-item"></div>
-        </div>
+        <BrowserRouter>
+            <Route exact path='/info' component={MyInfo} />
+            <Route path='/info/help' component={Help} />
+        </BrowserRouter>
     )
 }
 export default Info

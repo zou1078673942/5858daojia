@@ -1,0 +1,46 @@
+.home-head-wrapper {
+    width: 100%;
+    position: fixed;
+    min-height: 1.3rem;
+    overflow: hidden;
+    background: linear-gradient(-225deg,#E6454A 0,#ED594B 50%,#FF884C 100%);
+}
+.home-head-wrapper .head-loge{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -9px;
+    width: 62px;
+    height: 18px;
+    background: url(https://static.daojia.com/changsha/fe-website-dj-m/static/widget/topbar/img/dj-logo_9931f5b.png) no-repeat;
+    background-size: 100%;
+}
+.home-head-wrapper .topbar-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 1.3rem;
+    padding-right: 10px;
+}
+.home-head-wrapper .topbar-wrap .city{
+    max-width: 2rem;
+    color: #fdedec;
+    padding-right: 20px;
+    font-size: 0.4rem;
+    font-weight: 700;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    transform: translateY(-1px);
+}
+.city::before{
+    background: url(https://static.daojia.com/changsha/fe-website-dj-m/static/widget/topbar/img/icon-arrow_80109d7.png) no-repeat;
+}
+.home-head-wrapper .topbar-wrap input{
+    background: #fffaf8;
+    height: .7rem;
+    border-radius: 0.6rem;
+}
+.home-head-wrapper .topbar-wrap input::-webkit-input-placeholder{
+    text-align: center;
+}
