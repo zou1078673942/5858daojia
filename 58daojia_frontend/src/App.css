@@ -12,20 +12,6 @@ input{
 }
 .page{
   position: relative;
-  height: 16.5rem;
+  max-height: 20.1rem;
   overflow: scroll;
-}
-.footer{
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  min-width: 100%;
-}
-.footer ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 1.4rem;
-  background-color: #fff;
 }

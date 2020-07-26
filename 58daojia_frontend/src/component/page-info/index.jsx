@@ -7,10 +7,10 @@ import MyInfo from './component/MyInfo';
 
 function Info() {
     return (
-        <BrowserRouter>
+        <>
             <Route exact path='/info' component={MyInfo} />
             <Route path='/info/help' component={Help} />
-        </BrowserRouter>
+        </>
     )
 }
 export default Info

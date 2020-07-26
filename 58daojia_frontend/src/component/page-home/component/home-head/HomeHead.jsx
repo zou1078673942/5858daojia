@@ -5,7 +5,7 @@ function HomeHead() {
     return (
         <div className="home-head-wrapper">
             <div className="loge">
-                <Link to='/' className="head-loge">
+                <Link to='/home' className="head-loge">
                 </Link>
             </div>
             <div className="topbar-wrap">

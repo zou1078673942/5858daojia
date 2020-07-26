@@ -1,0 +1,20 @@
+.banner{
+    width: 10rem;
+    height: 8.3rem;
+    background-color: #fff;
+}
+.detail{
+    width: 10rem;
+    height: 100vh;
+}
+.swiper-container-initialized{
+    overflow-x: hidden;
+}
+/* .swiper-pagination  {
+    background-color:#fff  !important ;
+} */
+.swiper-pagination.swiper-pagination-bullets{
+    /* background-color:#fff  ; */
+    position: relative;
+    top: -.4rem;
+}

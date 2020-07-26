@@ -1,0 +1,30 @@
+.order{
+    position: relative;
+    margin-top: .3rem;
+    width: 10rem;
+    height: 1.16rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.my{
+    position: absolute;
+    left:.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .48rem;
+}
+.all{
+    position: absolute;
+    right: .7rem;
+    top: 50%;
+    font-size: .45rem;
+    transform: translateY(-50%);
+    color: rgb(150, 150, 150);
+
+}
+.all::after{
+    content: '\e67b';
+    font-family:'iconfont';
+
+}

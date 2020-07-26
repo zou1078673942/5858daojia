@@ -1,19 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './help.css'
+import Back from '../../pubilc/Back';
 function Help() {
     return (
         <div className="help-wrapper">
             <div className="help-top">
-                <Link className="top-between" to='/info'>
-                    <svg width="42" height="42">
-                        <polyline
-                            points="25,13 16,21 25,29"
-                            stroke="#000"
-                            strokeWidth="2"
-                            fill="none" />
-                    </svg>
-                </Link>
+                <Back/>
                 <span className="title">帮助中心</span>
                 <span className="top-between"></span>
             </div>

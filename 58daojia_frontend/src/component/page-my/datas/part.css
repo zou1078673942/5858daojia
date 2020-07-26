@@ -1,0 +1,28 @@
+.out_box{
+    margin-top: .3rem;
+}
+.data_box{
+    position: relative;
+    margin-top: .025rem;
+    width: 10rem;
+    height: 1.26rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.a{
+    position: absolute;
+    left: .4rem;
+    font-size: .4rem;
+}
+.b{
+    position:absolute;
+    right: .6rem;
+    font-size: .37rem;
+    color: rgb(177, 169, 177);
+}
+.b::after{
+    content: '\e67b';
+    font-family:'iconfont';
+}

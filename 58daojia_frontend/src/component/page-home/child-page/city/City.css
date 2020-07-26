@@ -1,0 +1,23 @@
+.city-page{
+    background-color: #fff;
+    display: flex;
+}
+.city-page .body{
+    flex: 1;
+}
+.top-wrap{
+    position: fixed;
+    width: 100%;
+}
+.city-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.2rem;
+    width: 100%;
+    background-color: #fff;
+}
+.city-title{
+    font-size: 0.5rem;
+    color: #272e31;
+}

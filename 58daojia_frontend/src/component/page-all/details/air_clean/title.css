@@ -1,0 +1,12 @@
+.detail_title{
+    width: 10rem;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    font-size: .45rem;
+    font-weight: 700;
+}
+.detail_title .one{
+    margin-left:.3rem;
+    margin-top: .2rem;
+}

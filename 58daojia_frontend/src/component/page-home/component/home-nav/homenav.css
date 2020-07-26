@@ -1,0 +1,51 @@
+.homenav-wrapper{
+    position: relative;
+    top: 1.3rem;
+    background-color: #fff;
+}
+.homenav-wrapper .fir-nav-icon img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.homenav-wrapper .fir-navs{
+    padding-top: 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.homenav-wrapper .fir-navs .fir-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homenav-wrapper .fir-nav-icon .fir-nav-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homenav-wrapper .sec-navs{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.homenav-wrapper .sec-navs .sec-nav{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homenav-wrapper .sec-navs .sec-nav-icon img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.homenav-wrapper .sec-nav-icon .sec-nav-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

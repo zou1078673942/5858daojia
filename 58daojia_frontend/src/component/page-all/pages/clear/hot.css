@@ -1,0 +1,16 @@
+.hot{
+    position: relative;
+    left: .3rem;
+}
+.wenzi{
+    margin-top: .5rem;
+    font-size: .4rem;
+    font-weight: 600;
+}
+.all_item{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap:wrap
+}

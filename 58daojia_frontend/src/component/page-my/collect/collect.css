@@ -1,0 +1,12 @@
+.collect{
+    margin-top: .3rem;
+    background-color: #fff;
+    display: flex;
+    height: 2.3rem;
+    /* text-align: center; */
+    align-items:center;
+    align-content: center;
+    justify-content: space-around;
+    font-size: .41rem;
+    font-weight: 500;
+}

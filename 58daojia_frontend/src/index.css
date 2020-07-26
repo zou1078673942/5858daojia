@@ -1,5 +1,6 @@
 html{
   min-height: 100%;
+  overflow-x: hidden; overflow-y: auto;
 }
 body {
   margin: 0;
@@ -16,4 +17,7 @@ code {
 }
 a{
   text-decoration:none;
+}
+::-webkit-scrollbar{
+  display: none;
 }

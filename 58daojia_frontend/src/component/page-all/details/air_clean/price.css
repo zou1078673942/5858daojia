@@ -1,0 +1,34 @@
+.orderlabel__price{
+    padding: .01rem 0 0 .2rem;
+    width: 9.8rem;
+    color: #f33f3e;
+    display: flex;
+    background-color: #fff;
+}
+.orderlabel__price .one{
+    position: relative;
+    top: .42rem;
+    font-size: .5rem;
+    font-weight: 600;
+
+}
+.orderlabel__price .two{
+    font-size: .8rem;
+    font-weight: 610;
+    position: relative;
+    top: .1rem;
+}
+.orderlabel__price .three{
+    font-size: .45rem;
+    font-weight: 630;
+    position: relative;
+    top: .47rem;
+
+}
+.orderlabel__price .four{
+    font-size: .35rem;
+    font-weight: 630;   
+    position: relative;
+    top: .52rem;
+
+}

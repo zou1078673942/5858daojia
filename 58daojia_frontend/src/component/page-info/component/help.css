@@ -16,8 +16,8 @@ html{
     font-size: 0.65rem;
 }
 .help-top .top-between{
-    width: 2.1rem;
-    font-size: 0.45rem;
+    width: 42px;
+    height: 42px;
 }
 .subtitle{
     display: flex;

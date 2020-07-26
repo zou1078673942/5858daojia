@@ -1,0 +1,21 @@
+.login_out{
+    height: 2.5rem;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn{
+    color: red;
+    font-size: .55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto ; */
+    /* padding: ; */
+    width: 5rem;
+    height: 1.2rem;
+    border :solid   .03rem    red;
+    border-radius:.2rem;
+}
