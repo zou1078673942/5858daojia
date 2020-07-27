@@ -1,9 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, memo } from 'react';
 import './allcity.css'
+import { connect } from 'react-redux';
+import { changeCity } from '../../../store/actionCreator';
+import { Link } from 'react-router-dom';
 
 let ranges = [], base = 0
-export default function AllCity(props) {
-    const { allCities } = props
+function AllCity(props) {
+    const { allCities, chooseCity } = props
     const [activeIndex, setActiveIndex] = useState(0)
     const handleTabClick = (e) => {
         const rnav = e.target.getAttribute('data-rnav')
@@ -45,9 +48,12 @@ export default function AllCity(props) {
                                     {
                                         item.citys?.map((city, j) => {
                                             return (
-                                                <li key={j + city.name}>
+                                                <Link 
+                                                to="/Home"
+                                                onClick={() => {chooseCity(city.name)}}
+                                                key={j + city.name}>
                                                     {city.name}
-                                                </li>
+                                                </Link>
                                             )
                                         })
                                     }
@@ -82,3 +88,17 @@ export default function AllCity(props) {
         </div>
     )
 }
+
+const mapStateToProps = (state) => {
+    return state
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        chooseCity: (city) => {
+            dispatch(changeCity(city))
+        }
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(memo(AllCity))

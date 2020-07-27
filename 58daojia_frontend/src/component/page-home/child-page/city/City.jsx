@@ -3,6 +3,7 @@ import Back from '../../../pubilc/Back';
 import './City.css'
 import HotCity from './city-component/HotCity'
 import AllCity from './city-component/AllCity';
+import UsefulCity from './city-component/UsefulCity';
 
 export default function City() {
     const [cities, setCities] = useState([])
@@ -13,7 +14,6 @@ export default function City() {
     }, [])
     const hotCities = cities.hotCities
     const allCities = cities.cityList
-    console.log(allCities)
     return (
         <div className="city-page" >
             <div className="body" data-body={'#'}>
@@ -26,6 +26,7 @@ export default function City() {
                 </div>
                 <HotCity hotCities={hotCities} />
                 <AllCity allCities={allCities} />
+                <UsefulCity />
             </div>
         </div>
     )

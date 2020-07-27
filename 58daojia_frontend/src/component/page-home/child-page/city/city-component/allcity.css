@@ -46,7 +46,12 @@
     align-items: center;
     font-size: 0.2rem;
 }
-.city-title .city-fir li{
+.city-title .city-fir{
+    display: flex;
+    flex-direction: column;
+}
+.city-title .city-fir a{
+    color: #292929;
     line-height: 1.5rem;
     width: 7rem;
     border-bottom: 1px solid #e9ecee;

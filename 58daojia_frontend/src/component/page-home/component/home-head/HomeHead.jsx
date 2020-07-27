@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Link,BrowserRouter } from 'react-router-dom';
 import './homehead.css'
-function HomeHead() {
+import { connect } from 'react-redux';
+function HomeHead(props) {
     return (
         <div className="home-head-wrapper">
-            <div className="loge">
+            <div className="loge"> 
                 <Link to='/home' className="head-loge">
                 </Link>
             </div>
             <div className="topbar-wrap">
                 <Link to="/home/city" className="city">
-                    东华理工大学
+                    {props.city}
                 </Link>
                 <input type="text" placeholder="(loge)搜索"/>
             </div>
         </div>
     )
 }
-export default HomeHead
+const mapStateToProps = (state) => ({
+    city: state.city.city
+})
+export default connect(mapStateToProps)(memo(HomeHead))

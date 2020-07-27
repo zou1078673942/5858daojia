@@ -1,12 +1,7 @@
 import {createStore, combineReducers , applyMiddleware } from 'redux'
-import infoReducer from '../component/page-info/reducers/info-reducer'
 import thunk from 'redux-thunk'
+import reducers from './reducers'
 
-export default createStore(
-    combineReducers(infoReducer),
-    {
-        isLoadingInfo: true,
-        infoData: null
-    },
-    applyMiddleware(thunk)
-)
+const store = createStore(reducers, applyMiddleware(thunk))
+
+export default store
