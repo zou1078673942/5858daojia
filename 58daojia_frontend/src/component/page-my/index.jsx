@@ -1,23 +1,13 @@
-import React from 'react';
-import Header from './header/header.js'
-import Order from './order/order.js'
-import Wait from './wait/wait.js'
-import Collect from './collect/collect.js'
-import Data from './datas/datas'
-import Login_out from './login_out/login_out'
-import Footer from '../pubilc/Footer'
+import React from 'react'
+import {Route} from 'react-router'
+import MyApp from './MyApp'
+import MyOrder from './order/myOrder/MyOrder'
 
-
-export default function My(){
-    return(
-        <div className='login'>
-            <Header />
-            <Order />
-            <Wait />
-            <Collect />
-            <Data />
-            <Login_out />
-            <Footer />
-        </div>
+export default function My () {
+    return (
+        <>
+            <Route exact path='/my' component={MyApp}/>
+            <Route path='/my/order' component={MyOrder}/>
+        </>
     )
 }

@@ -1,4 +1,4 @@
-import React ,{Component}from 'react';
+import React from 'react';
 import Swiper from "swiper"
 import "swiper/css/swiper.css"
 import './detail.css'
@@ -8,6 +8,9 @@ import {Biaoyu} from './biaoyu.js'
 import {Gou} from './gou.js'
 import {Youhui} from './youhui'
 import {Xuanze} from './xuanze'
+import {Pic} from './pic'
+import {Buy} from './buy'
+import Back from '../../../pubilc/Back';
 export default class Details extends React.Component {
   constructor() {
     super()
@@ -50,8 +53,10 @@ export default class Details extends React.Component {
   }
   render(){
     return(
+       
       <div className='detail'>
       <div className='banner'>
+      <div className='detail_back'><Back/></div> 
       <div className="slider-container">
       <div className="swiper-wrapper">
         {
@@ -89,17 +94,32 @@ export default class Details extends React.Component {
       <Xuanze>
         <div className='xuanze_title'>
           <div className='head_title' >地址</div>
-          <div className= 'detail_title1 iconfont' >请选择服务地址     &#xe67b;</div>
+          <div className= 'detail_title1 iconfont' >请选择服务地址</div><div className= 'iconfont'> &#xe67b;</div>
         </div>
         <div className='xuanze_title'>
           <div className='head_title' >规格</div>
-          <div className= 'detail_title1 iconfont'>请选择服务规格 &#xe67b;</div>
+          <div className= 'detail_title1 iconfont'>请选择服务规格</div><div className= 'iconfont'> &#xe67b;</div>
         </div>
         <div className='xuanze_title'>
           <div className='head_title' >时间</div>
-          <div className= 'detail_title1 iconfont'>请选择服务时间 &#xe67b;</div>
+          <div className= 'detail_title1 iconfont'>请选择服务时间</div><div className= 'iconfont'> &#xe67b;</div>
         </div>
       </Xuanze>
+      <Pic>
+        <img src="https://images.daojia.com/pic/commodity/online/d49cb340147447aff1d2c972723b9b01.jpg?x-oss-process=image/auto-orient,0/format,webp" alt=""/>
+        <img src="https://images.daojia.com/pic/commodity/online/10690ea952b4f41349d3846192dea38e.jpg?x-oss-process=image/auto-orient,0/format,webp" alt=""/>
+        <img src="https://images.daojia.com/pic/commodity/online/c3a4b62f30b43df4bbebd2becc126164.jpg?x-oss-process=image/auto-orient,0/format,webp" alt=""/>
+        <img src="https://images.daojia.com/pic/commodity/online/08f7f4b4b753bfa4ce28e594951ad6a5.jpg?x-oss-process=image/auto-orient,0/format,webp" alt=""/>
+        <img src="https://images.daojia.com/pic/commodity/online/8b4eb621d275d8cbc04c029658ec4de6.jpg?x-oss-process=image/auto-orient,0/format,webp" alt=""/>
+        <img src="https://images.daojia.com/pic/commodity/online/165c2cb8a74e2a65208716a795a8c962.jpg?x-oss-process=image/auto-orient,0/format,webp" alt=""/>
+      </Pic>
+      <Buy>
+        <div className='kefu_icon'>
+          <div className='kefu_icons iconfont'> &#xe61b; </div>
+          <div className='kefu_word'>客服</div>
+        </div>
+          <div className='buy_now'>立即购买</div>
+      </Buy>
     </div>
     )
   }

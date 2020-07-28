@@ -7,7 +7,7 @@ import store from './store/store.jsx'
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />,
+    <App />
   </Provider>,
   document.getElementById('root')
 );

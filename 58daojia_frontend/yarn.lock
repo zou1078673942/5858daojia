@@ -10089,7 +10089,7 @@ svgo@^1.0.0, svgo@^1.2.2:
 
 swiper@^5.4.2:
   version "5.4.5"
-  resolved "https://registry.npm.taobao.org/swiper/download/swiper-5.4.5.tgz?cache=0&sync_timestamp=1594816699403&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fswiper%2Fdownload%2Fswiper-5.4.5.tgz#a350f654bf68426dbb651793824925512d223c0f"
+  resolved "https://registry.npm.taobao.org/swiper/download/swiper-5.4.5.tgz#a350f654bf68426dbb651793824925512d223c0f"
   integrity sha1-o1D2VL9oQm27ZReTgkklUS0iPA8=
   dependencies:
     dom7 "^2.1.5"
