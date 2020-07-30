@@ -24,9 +24,9 @@ export default function City() {
                         <span style={{ width: 42, height: 42 }}></span>
                     </div>
                 </div>
+                <UsefulCity />
                 <HotCity hotCities={hotCities} />
                 <AllCity allCities={allCities} />
-                <UsefulCity />
             </div>
         </div>
     )

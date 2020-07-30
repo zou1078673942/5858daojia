@@ -3,11 +3,13 @@ import './hotcity.css'
 import { Link } from 'react-router-dom';
 import { changeCity } from '../../../store/actionCreator'
 import { connect } from 'react-redux';
+import { localCity } from './LocalCIty'
 
 function HotCity(props) {
     const { hotCities } = props
     const { chooseCity } = props
     const clickCity = (name) => {
+        localCity(name)
         chooseCity(name)
     }
     // console.log(hotCities)

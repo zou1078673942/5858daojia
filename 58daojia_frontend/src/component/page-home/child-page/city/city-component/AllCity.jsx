@@ -3,6 +3,7 @@ import './allcity.css'
 import { connect } from 'react-redux';
 import { changeCity } from '../../../store/actionCreator';
 import { Link } from 'react-router-dom';
+import { localCity } from './LocalCIty'
 
 let ranges = [], base = 0
 function AllCity(props) {
@@ -14,6 +15,11 @@ function AllCity(props) {
         const cityBody = document.querySelector(`[data-body="${rnav}"]`)
         setActiveIndex(parseInt(activeIndex))
         cityBody.scrollIntoView({})
+    }
+    const clickCity = (name) => {
+        console.log(name)
+        localCity(name)
+        chooseCity(name)
     }
     const ref = useRef()
     useEffect(() => {
@@ -50,7 +56,7 @@ function AllCity(props) {
                                             return (
                                                 <Link 
                                                 to="/Home"
-                                                onClick={() => {chooseCity(city.name)}}
+                                                onClick={() => {clickCity(city.name)}}
                                                 key={j + city.name}>
                                                     {city.name}
                                                 </Link>
