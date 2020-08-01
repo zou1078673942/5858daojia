@@ -1,0 +1,32 @@
+.need-wrapper{
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    background-color: #fff;
+    height: 1.5rem;
+    color: #292d33;
+}
+.need-wrapper .need-left {
+    font-size: 0.5rem;
+}
+.need-wrapper .need-right{
+    padding-right: 0.3rem;
+    font-size: 0.4rem;
+    background: url('https://static.daojia.com/changsha/fe-website-dj-m/static/widget/home-guess/img/at_717fc06.png') right no-repeat;
+    background-size: 20% 60%;
+}
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.2rem;
+    font-size: 0.4rem;
+}
+.more p{
+    width: 2rem;
+    background: url('https://static.daojia.com/changsha/fe-website-dj-m/static/widget/home-guess/img/at_717fc06.png') right no-repeat;
+    background-size: 18% 60%;
+}

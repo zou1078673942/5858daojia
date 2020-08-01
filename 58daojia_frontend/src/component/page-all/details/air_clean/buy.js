@@ -22,6 +22,9 @@ export const Buy = styled.div`
         width: 2rem;
         height: 1rem;
         font-size:.4rem;
+        position:relative;
+        right:-.5rem;
+        z-index:3;
     }
     .buy_now{
   justify-content:center;

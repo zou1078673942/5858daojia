@@ -1,0 +1,53 @@
+.tohome-wrapper{
+    margin-top: 1.55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #2d2d33;
+}
+.tohome-wrapper .tohome-title{
+    background: url('https://static.daojia.com/changsha/fe-website-dj-m/static/widget/home-choicecon/img/icon_ebc5b71.png') left center no-repeat;
+    background-size: contain;
+    display: flex;
+    font-size: 0.5rem;
+    width: 2rem;
+    padding-left: 0.7rem;
+    margin-top: 0.3rem;
+}
+.tohome-wrapper .tohome-adver{
+    width: 9.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+.tohome-wrapper .tohome-adver .adver {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    width: 4.5rem;
+    height: 2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.tohome-wrapper .tohome-adver .adver .text{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #2d2d33;
+    font-size: 0.4rem;
+}
+.tohome-wrapper .tohome-adver .adver .text .sub{
+    color: #a7adb6;
+    font-size: 0.3rem;
+    padding-top: 0.2rem;
+}
+.tohome-wrapper .tohome-adver .adver img{
+    height: 1.2rem;
+    width: 1.7rem;
+    padding-top: 0.4rem;
+}

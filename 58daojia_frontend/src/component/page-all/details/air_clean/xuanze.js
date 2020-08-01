@@ -21,6 +21,8 @@ export const Xuanze = styled.div`
     height:2rem ;
     left:.5rem;
     display:flex;
+    font-size:0.4rem;
+    font-weight:600;
     text-align:center;
     align-items:center;
     position: relative;
@@ -31,7 +33,7 @@ export const Xuanze = styled.div`
     left:.5rem;
     text-align:center;
     align-items:center;
-    width:4rem;
+    width:8rem;
     height:1.8rem ;
     position: relative;
   }

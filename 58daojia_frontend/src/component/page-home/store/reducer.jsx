@@ -1,8 +1,9 @@
 import { CHANGE_CITY } from "./actionCreator";
-import { reducer } from "./actionCreator";
 
+let state = JSON.parse(localStorage.getItem('city'))[0].city
+console.log(state)
 const defaultState = {
-    city:'东华理工大学'
+    city: state
 }
 export default (state = defaultState, action) => {
     switch (action.type) {

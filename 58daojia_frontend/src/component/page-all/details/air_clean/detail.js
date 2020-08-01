@@ -47,7 +47,10 @@ export default class Details extends React.Component {
       },
       pagination: {
         el: '.swiper-pagination',
-        type: 'bullets',
+        type: 'custom',
+        renderCustom: function (swiper, current, total) {
+          return current + ' / ' + total;
+        }
       }
     })
   }
@@ -94,15 +97,15 @@ export default class Details extends React.Component {
       <Xuanze>
         <div className='xuanze_title'>
           <div className='head_title' >地址</div>
-          <div className= 'detail_title1 iconfont' >请选择服务地址</div><div className= 'iconfont'> &#xe67b;</div>
+          <div className= 'detail_title1 iconfont' ><input type="text" placeholder='请选择服务地址'/></div><div className= 'iconfont'> &#xe67b;</div>
         </div>
         <div className='xuanze_title'>
           <div className='head_title' >规格</div>
-          <div className= 'detail_title1 iconfont'>请选择服务规格</div><div className= 'iconfont'> &#xe67b;</div>
+          <div className= 'detail_title1 iconfont'><input type="text" placeholder='请选择服务规格'/> </div><div className= 'iconfont'> &#xe67b;</div>
         </div>
         <div className='xuanze_title'>
           <div className='head_title' >时间</div>
-          <div className= 'detail_title1 iconfont'>请选择服务时间</div><div className= 'iconfont'> &#xe67b;</div>
+          <div className= 'detail_title1 iconfont'><input type="text" placeholder='请选择服务时间'/></div><div className= 'iconfont'> &#xe67b;</div>
         </div>
       </Xuanze>
       <Pic>

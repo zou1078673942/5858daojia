@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11645574",
+      "name": "首页",
+      "font_class": "weibiaoti-",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "11649031",
+      "name": "菜单管理",
+      "font_class": "caidanguanli",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "11651835",
+      "name": "意见汇总",
+      "font_class": "yijianhuizong",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "11653859",
+      "name": "地点",
+      "font_class": "didian",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "11654058",
+      "name": "账号",
+      "font_class": "zhanghao",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    }
+  ]
+}
