@@ -6,7 +6,7 @@ import { localCity } from './LocalCIty'
 import './usefulcity.css'
 
 
-function UsefulCity(props) {
+function UsefulCity(props) { 
     const { chooseCity } = props
     const usefulCity = [...JSON.parse(localStorage.getItem('city'))]
     console.log(usefulCity)
